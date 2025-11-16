@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mother's Aid - Reducing Maternal Mortality</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Mother's Aid</div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About Us</a></li>
+                <li><a href="#organization" class="nav-link">Parent Organization</a></li>
+                <li><a href="#mobile" class="nav-link">Mobile Unit</a></li>
+                <li><a href="#signup" class="nav-link">Patient Sign Up Portal</a></li>
+                <li><a href="#services" class="nav-link">Services Provided</a></li>
+                <li><a href="#budget" class="nav-link">Budget</a></li>
+                <li><a href="#references" class="nav-link">References</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="animated-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+                <div class="shape shape-5"></div>
+                <div class="shape shape-6"></div>
+            </div>
+            <div class="floating-particles" id="particles"></div>
+            <div class="gradient-orbs">
+                <div class="orb orb-1"></div>
+                <div class="orb orb-2"></div>
+                <div class="orb orb-3"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-left">
+                <div class="hero-icon">
+                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-word">Mother's</span>
+                    <span class="title-word">Aid</span>
+                </h1>
+                <p class="hero-subtitle">A pilot program to reduce maternal mortality by bridging disparities in Hancock County, Georgia.</p>
+                <div class="hero-description">
+                    <p>We bring comprehensive maternal healthcare directly to your community, eliminating barriers that prevent access to essential prenatal and postnatal care.</p>
+                    <ul class="hero-features">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Mobile healthcare units in your area
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Comprehensive prenatal and postnatal care
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Professional support from certified specialists
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            No cost barriers to essential care
+                        </li>
+                    </ul>
+                </div>
+                <div class="hero-cta">
+                    <a href="#about" class="cta-button cta-primary">Get Started</a>
+                    <a href="#services" class="cta-button cta-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="hero-box">
+                    <h3 class="card-title">Impact Statistics</h3>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="87">0</span>
+                            <span class="stat-percent">%</span>
+                            <span class="stat-label">Preventable Deaths</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="63">0</span>
+                            <span class="stat-text">miles</span>
+                            <span class="stat-label">To Nearest Care</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="100">0</span>
+                            <span class="stat-percent">%</span>
+                            <span class="stat-label">Community Care</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>Join us in making a difference in maternal healthcare</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll to explore</p>
+        </div>
+    </section>
+
+    <!-- Home Section -->
+    <section id="home" class="main-content section-page">
+        <div class="container">
+            <h2 class="section-title">The Problem:</h2>
+            
+            <div class="content-block">
+                <h3 class="location-title">Hancock County, Georgia:</h3>
+                
+                <ul class="info-list">
+                    <li class="info-item fade-in">Located in the rural eastern part of Georgia</li>
+                    <li class="info-item fade-in">
+                        Has some of the highest maternal mortality rates in the nation 
+                        <span class="highlight">(37.9</span> deaths per <span class="highlight">100,000</span> 
+                        live births with <span class="highlight">87%</span> deemed preventable)
+                    </li>
+                    <li class="info-item fade-in">Mothers must travel approx. 63 miles (over an hour) to access prenatal or maternal care</li>
+                </ul>
+
+                <div class="barriers-box fade-in">
+                    <p class="barriers-text">
+                        Barriers such as lack of transportation, inability to take time off work, childcare responsibilities, 
+                        and other socioeconomic challenges often cause women to miss or delay vital appointments. Our 
+                        program seeks to remove these barriers by bringing care directly to the community.
+                    </p>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="aims-section fade-in">
+                <h3 class="aims-title">By providing accessible, preventive, and community-based maternal care, our program aims to:</h3>
+                
+                <ul class="aims-list">
+                    <li class="aims-item">Reduce maternal mortality and complications associated with pregnancy</li>
+                    <li class="aims-item">Strengthen the relationship between healthcare providers and the community</li>
+                    <li class="aims-item">Promote healthier outcomes for mothers and babies in Hancock County</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="section-page about-section">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            
+            <div class="content-block">
+                <div class="about-grid">
+                    <div class="about-card fade-in">
+                        <div class="card-icon">🎯</div>
+                        <h3>Our Mission</h3>
+                        <p>To eliminate preventable maternal deaths in Hancock County by providing accessible, 
+                        community-based prenatal and maternal care to all women, regardless of their circumstances.</p>
+                    </div>
+                    
+                    <div class="about-card fade-in">
+                        <div class="card-icon">👁️</div>
+                        <h3>Our Vision</h3>
+                        <p>A future where every mother in Hancock County receives the care she deserves, 
+                        leading to healthier families and stronger communities.</p>
+                    </div>
+                    
+                    <div class="about-card fade-in">
+                        <div class="card-icon">💝</div>
+                        <h3>Our Values</h3>
+                        <p>Compassion, accessibility, community partnership, health equity, and culturally 
+                        sensitive care that respects and honors every mother.</p>
+                    </div>
+                </div>
+
+                <div class="team-section">
+                    <h3 class="subsection-title">Our Team</h3>
+                    <p class="team-description">
+                        Mother's Aid is powered by a dedicated team of healthcare professionals, community organizers, 
+                        and public health experts who are passionate about maternal health equity. Our team includes 
+                        certified nurse-midwives, obstetricians, social workers, and community health workers who 
+                        understand the unique needs of rural Georgia.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parent Organization Section -->
+    <section id="organization" class="section-page organization-section">
+        <div class="container">
+            <h2 class="section-title">Parent Organization</h2>
+            
+            <div class="content-block">
+                <div class="org-header fade-in">
+                    <h3>Georgia Rural Health Initiative</h3>
+                    <p class="org-subtitle">Bridging Healthcare Gaps Across Rural Georgia</p>
+                </div>
+
+                <div class="org-content">
+                    <p class="org-description">
+                        Mother's Aid is a flagship program of the Georgia Rural Health Initiative (GRHI), 
+                        a nonprofit organization established in 2018 to address healthcare disparities in 
+                        underserved rural communities across Georgia.
+                    </p>
+
+                    <div class="org-stats">
+                        <div class="stat-card fade-in">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Counties Served</div>
+                        </div>
+                        <div class="stat-card fade-in">
+                            <div class="stat-number">50,000+</div>
+                            <div class="stat-label">Patients Reached</div>
+                        </div>
+                        <div class="stat-card fade-in">
+                            <div class="stat-number">100+</div>
+                            <div class="stat-label">Healthcare Professionals</div>
+                        </div>
+                    </div>
+
+                    <div class="org-programs">
+                        <h4>GRHI Programs</h4>
+                        <ul class="programs-list">
+                            <li>Mother's Aid - Maternal Health Program</li>
+                            <li>Mobile Clinic Services</li>
+                            <li>Chronic Disease Management</li>
+                            <li>Preventive Care Outreach</li>
+                            <li>Health Education Workshops</li>
+                            <li>Telehealth Services</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Unit Section -->
+    <section id="mobile" class="section-page mobile-section">
+        <div class="container">
+            <h2 class="section-title">Mobile Unit</h2>
+            
+            <div class="content-block">
+                <div class="mobile-intro fade-in">
+                    <h3>🚐 Bringing Healthcare to Your Community</h3>
+                    <p>Our state-of-the-art mobile medical unit brings comprehensive maternal care directly 
+                    to communities in Hancock County, eliminating transportation barriers and making 
+                    healthcare accessible to all.</p>
+                </div>
+
+                <div class="mobile-features">
+                    <h4>Mobile Unit Features</h4>
+                    <div class="features-grid">
+                        <div class="feature-card fade-in">
+                            <div class="feature-icon">🏥</div>
+                            <h5>Full Medical Exam Room</h5>
+                            <p>Equipped for comprehensive prenatal examinations and consultations</p>
+                        </div>
+                        <div class="feature-card fade-in">
+                            <div class="feature-icon">🔬</div>
+                            <h5>Diagnostic Equipment</h5>
+                            <p>Ultrasound, lab testing capabilities, and vital signs monitoring</p>
+                        </div>
+                        <div class="feature-card fade-in">
+                            <div class="feature-icon">💊</div>
+                            <h5>Pharmacy Services</h5>
+                            <p>On-site medication dispensing and prescription management</p>
+                        </div>
+                        <div class="feature-card fade-in">
+                            <div class="feature-icon">👥</div>
+                            <h5>Private Consultation</h5>
+                            <p>Comfortable, confidential space for patient-provider discussions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="schedule-section">
+                    <h4>Weekly Schedule</h4>
+                    <div class="schedule-table">
+                        <div class="schedule-row">
+                            <div class="day">Monday</div>
+                            <div class="location">Sparta Community Center</div>
+                            <div class="time">9:00 AM - 4:00 PM</div>
+                        </div>
+                        <div class="schedule-row">
+                            <div class="day">Tuesday</div>
+                            <div class="location">Shoulderbone Baptist Church</div>
+                            <div class="time">9:00 AM - 4:00 PM</div>
+                        </div>
+                        <div class="schedule-row">
+                            <div class="day">Wednesday</div>
+                            <div class="location">Mayfield Community Hall</div>
+                            <div class="time">9:00 AM - 4:00 PM</div>
+                        </div>
+                        <div class="schedule-row">
+                            <div class="day">Thursday</div>
+                            <div class="location">Linton Recreation Center</div>
+                            <div class="time">9:00 AM - 4:00 PM</div>
+                        </div>
+                        <div class="schedule-row">
+                            <div class="day">Friday</div>
+                            <div class="location">Devereux Town Square</div>
+                            <div class="time">9:00 AM - 4:00 PM</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Patient Sign Up Portal Section -->
+    <section id="signup" class="section-page signup-section">
+        <div class="container">
+            <h2 class="section-title">Patient Sign Up Portal</h2>
+            
+            <div class="content-block">
+                <div class="signup-intro fade-in">
+                    <p>Join Mother's Aid today and get access to comprehensive maternal healthcare 
+                    right in your community. Our services are free and available to all pregnant women 
+                    and new mothers in Hancock County.</p>
+                </div>
+
+                <div class="signup-form-container">
+                    <form class="signup-form" id="patientSignupForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address">Street Address *</label>
+                            <input type="text" id="address" name="address" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="city">City *</label>
+                                <input type="text" id="city" name="city" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="zip">ZIP Code *</label>
+                                <input type="text" id="zip" name="zip" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="dueDate">Expected Due Date (if pregnant)</label>
+                                <input type="date" id="dueDate" name="dueDate">
+                            </div>
+                            <div class="form-group">
+                                <label for="insurance">Insurance Status</label>
+                                <select id="insurance" name="insurance">
+                                    <option value="">Select...</option>
+                                    <option value="medicaid">Medicaid</option>
+                                    <option value="private">Private Insurance</option>
+                                    <option value="none">No Insurance</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="needs">Special Needs or Concerns</label>
+                            <textarea id="needs" name="needs" rows="4"></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label>
+                                <input type="checkbox" name="consent" required>
+                                I consent to receive care from Mother's Aid and agree to the program terms
+                            </label>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Submit Application</button>
+                    </form>
+
+                    <div class="signup-success" id="signupSuccess" style="display: none;">
+                        <div class="success-icon">✓</div>
+                        <h3>Application Submitted Successfully!</h3>
+                        <p>Thank you for signing up. A member of our team will contact you within 24-48 hours 
+                        to schedule your first appointment.</p>
+                    </div>
+                </div>
+
+                <div class="contact-info">
+                    <h4>Need Help?</h4>
+                    <p>📞 Call us: (706) 555-MOMS (6667)</p>
+                    <p>📧 Email: info@mothersaid.org</p>
+                    <p>🕐 Monday - Friday, 8:00 AM - 5:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Provided Section -->
+    <section id="services" class="section-page services-section">
+        <div class="container">
+            <h2 class="section-title">Services Provided</h2>
+            
+            <div class="content-block">
+                <p class="services-intro fade-in">
+                    Mother's Aid offers comprehensive maternal healthcare services at no cost to eligible 
+                    participants. Our services cover all stages of pregnancy, childbirth, and postpartum care.
+                </p>
+
+                <div class="services-grid">
+                    <div class="service-card fade-in">
+                        <div class="service-icon">🤰</div>
+                        <h3>Prenatal Care</h3>
+                        <ul>
+                            <li>Regular prenatal checkups and monitoring</li>
+                            <li>Ultrasound examinations</li>
+                            <li>Blood tests and screenings</li>
+                            <li>Nutrition counseling</li>
+                            <li>Prenatal vitamins and supplements</li>
+                            <li>High-risk pregnancy management</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card fade-in">
+                        <div class="service-icon">👶</div>
+                        <h3>Birth Planning & Support</h3>
+                        <ul>
+                            <li>Birth plan development</li>
+                            <li>Childbirth education classes</li>
+                            <li>Labor and delivery preparation</li>
+                            <li>Hospital coordination</li>
+                            <li>Doula services referral</li>
+                            <li>Breastfeeding education</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card fade-in">
+                        <div class="service-icon">💕</div>
+                        <h3>Postpartum Care</h3>
+                        <ul>
+                            <li>Postpartum checkups (up to 1 year)</li>
+                            <li>Breastfeeding support and lactation consultation</li>
+                            <li>Mental health screening and support</li>
+                            <li>Newborn care guidance</li>
+                            <li>Family planning counseling</li>
+                            <li>Recovery monitoring and support</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card fade-in">
+                        <div class="service-icon">🏠</div>
+                        <h3>Support Services</h3>
+                        <ul>
+                            <li>Home visits for high-risk patients</li>
+                            <li>Transportation assistance</li>
+                            <li>Childcare coordination during appointments</li>
+                            <li>Social services referrals</li>
+                            <li>Insurance enrollment assistance</li>
+                            <li>24/7 nurse hotline access</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="eligibility-section">
+                    <h3>Eligibility</h3>
+                    <p>Our services are available to:</p>
+                    <ul class="eligibility-list">
+                        <li>✓ Pregnant women residing in Hancock County</li>
+                        <li>✓ New mothers up to 1 year postpartum</li>
+                        <li>✓ All income levels welcome</li>
+                        <li>✓ Insured and uninsured patients</li>
+                        <li>✓ Women of all ages and backgrounds</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Budget Section -->
+    <section id="budget" class="section-page budget-section">
+        <div class="container">
+            <h2 class="section-title">Budget</h2>
+            
+            <div class="content-block">
+                <div class="budget-intro fade-in">
+                    <p>Mother's Aid operates as a pilot program with funding from federal grants, state healthcare 
+                    initiatives, and private donations. Our budget is designed to maximize impact while maintaining 
+                    financial sustainability.</p>
+                </div>
+
+                <div class="budget-overview">
+                    <h3>Annual Budget: $850,000</h3>
+                    
+                    <div class="budget-chart">
+                        <div class="budget-item fade-in">
+                            <div class="budget-item-wrapper">
+                                <div class="budget-info">
+                                    <span class="budget-label">Staff Salaries</span>
+                                    <span class="budget-amount">$340,000 (40%)</span>
+                                </div>
+                                <div class="budget-bar-container">
+                                    <div class="budget-bar" style="width: 40%;">
+                                        <span class="budget-percentage">40%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="budget-item fade-in">
+                            <div class="budget-item-wrapper">
+                                <div class="budget-info">
+                                    <span class="budget-label">Medical Equipment & Supplies</span>
+                                    <span class="budget-amount">$212,500 (25%)</span>
+                                </div>
+                                <div class="budget-bar-container">
+                                    <div class="budget-bar" style="width: 25%;">
+                                        <span class="budget-percentage">25%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="budget-item fade-in">
+                            <div class="budget-item-wrapper">
+                                <div class="budget-info">
+                                    <span class="budget-label">Mobile Unit Operations</span>
+                                    <span class="budget-amount">$127,500 (15%)</span>
+                                </div>
+                                <div class="budget-bar-container">
+                                    <div class="budget-bar" style="width: 15%;">
+                                        <span class="budget-percentage">15%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="budget-item fade-in">
+                            <div class="budget-item-wrapper">
+                                <div class="budget-info">
+                                    <span class="budget-label">Patient Support Services</span>
+                                    <span class="budget-amount">$85,000 (10%)</span>
+                                </div>
+                                <div class="budget-bar-container">
+                                    <div class="budget-bar" style="width: 10%;">
+                                        <span class="budget-percentage">10%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="budget-item fade-in">
+                            <div class="budget-item-wrapper">
+                                <div class="budget-info">
+                                    <span class="budget-label">Marketing & Outreach</span>
+                                    <span class="budget-amount">$59,500 (7%)</span>
+                                </div>
+                                <div class="budget-bar-container">
+                                    <div class="budget-bar" style="width: 7%;">
+                                        <span class="budget-percentage">7%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="budget-item fade-in">
+                            <div class="budget-item-wrapper">
+                                <div class="budget-info">
+                                    <span class="budget-label">Administrative Costs</span>
+                                    <span class="budget-amount">$25,500 (3%)</span>
+                                </div>
+                                <div class="budget-bar-container">
+                                    <div class="budget-bar" style="width: 3%;">
+                                        <span class="budget-percentage">3%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="funding-sources">
+                    <h3>Funding Sources</h3>
+                    <div class="funding-grid">
+                        <div class="funding-card fade-in">
+                            <h4>Federal Grants</h4>
+                            <p class="funding-amount">$450,000</p>
+                            <p>HRSA Maternal Health Innovation Program</p>
+                        </div>
+                        <div class="funding-card fade-in">
+                            <h4>State Funding</h4>
+                            <p class="funding-amount">$250,000</p>
+                            <p>Georgia Department of Public Health</p>
+                        </div>
+                        <div class="funding-card fade-in">
+                            <h4>Private Donations</h4>
+                            <p class="funding-amount">$100,000</p>
+                            <p>Foundations and individual donors</p>
+                        </div>
+                        <div class="funding-card fade-in">
+                            <h4>Insurance Billing</h4>
+                            <p class="funding-amount">$50,000</p>
+                            <p>Medicaid and private insurance reimbursements</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- References Section -->
+    <section id="references" class="section-page references-section">
+        <div class="container">
+            <h2 class="section-title">References</h2>
+            
+            <div class="content-block">
+                <div class="references-intro fade-in">
+                    <p>Our program is built on evidence-based practices and informed by extensive research 
+                    on maternal health disparities in rural America.</p>
+                </div>
+
+                <div class="references-list">
+                    <div class="reference-item fade-in">
+                        <span class="ref-number">1.</span>
+                        <p>Centers for Disease Control and Prevention. (2023). "Maternal Mortality Rates in the United States, 2021." 
+                        <em>NCHS Data Brief</em>, No. 456. Retrieved from www.cdc.gov/nchs</p>
+                    </div>
+
+                    <div class="reference-item fade-in">
+                        <span class="ref-number">2.</span>
+                        <p>Georgia Department of Public Health. (2023). "Maternal Mortality in Georgia: 2020-2022 Report." 
+                        Atlanta, GA: Maternal Mortality Review Committee.</p>
+                    </div>
+
+                    <div class="reference-item fade-in">
+                        <span class="ref-number">3.</span>
+                        <p>Kozhimannil, K. B., et al. (2022). "Association Between Loss of Hospital-Based Obstetric Services and Birth Outcomes in Rural Counties." 
+                        <em>JAMA Network Open</em>, 5(3), e220077.</p>
+                    </div>
+
+                    <div class="reference-item fade-in">
+                        <span class="ref-number">4.</span>
+                        <p>March of Dimes. (2023). "Nowhere to Go: Maternity Care Deserts Across the U.S." 
+                        Retrieved from www.marchofdimes.org</p>
+                    </div>
+
+                    <div class="reference-item fade-in">
+                        <span class="ref-number">5.</span>
+                        <p>Rural Health Information Hub. (2023). "Mobile Health Services in Rural Areas." 
+                        Retrieved from www.ruralhealthinfo.org</p>
+                    </div>
+
+                    <div class="reference-item fade-in">
+                        <span class="ref-number">6.</span>
+                        <p>Petersen, E. E., et al. (2019). "Racial/Ethnic Disparities in Pregnancy-Related Deaths — United States, 2007–2016." 
+                        <em>MMWR Morbidity and Mortality Weekly Report</em>, 68(35), 762-765.</p>
+                    </div>
+
+                    <div class="reference-item fade-in">
+                        <span class="ref-number">7.</span>
+                        <p>Health Resources and Services Administration. (2023). "Maternal Health Innovation Program." 
+                        U.S. Department of Health and Human Services.</p>
+                    </div>
+
+                    <div class="reference-item fade-in">
+                        <span class="ref-number">8.</span>
+                        <p>American College of Obstetricians and Gynecologists. (2021). "Optimizing Postpartum Care." 
+                        <em>ACOG Committee Opinion</em>, No. 736.</p>
+                    </div>
+
+                    <div class="reference-item fade-in">
+                        <span class="ref-number">9.</span>
+                        <p>Hancock County Health Department. (2022). "Community Health Needs Assessment 2022." 
+                        Sparta, GA.</p>
+                    </div>
+
+                    <div class="reference-item fade-in">
+                        <span class="ref-number">10.</span>
+                        <p>National Rural Health Association. (2023). "About Rural Health Care." 
+                        Retrieved from www.ruralhealthweb.org</p>
+                    </div>
+                </div>
+
+                <div class="additional-resources">
+                    <h3>Additional Resources</h3>
+                    <ul class="resources-list">
+                        <li><a href="#">Georgia Department of Public Health - Maternal & Child Health</a></li>
+                        <li><a href="#">CDC - Pregnancy Mortality Surveillance System</a></li>
+                        <li><a href="#">March of Dimes - Maternal Health Research</a></li>
+                        <li><a href="#">Rural Health Information Hub</a></li>
+                        <li><a href="#">Health Resources and Services Administration (HRSA)</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Mother's Aid Program. All rights reserved.</p>
+            <p>Bridging disparities in maternal healthcare.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
