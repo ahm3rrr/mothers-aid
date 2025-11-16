@@ -20,7 +20,7 @@
                 <span></span>
             </button>
             <ul class="nav-menu">
-                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#hero" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About Us</a></li>
                 <li><a href="#organization" class="nav-link">Parent Organization</a></li>
                 <li><a href="#mobile" class="nav-link">Mobile Unit</a></li>
@@ -33,7 +33,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="hero">
         <div class="hero-background">
             <div class="animated-shapes">
                 <div class="shape shape-1"></div>
@@ -148,6 +148,20 @@
                     <li class="info-item fade-in">Mothers must travel approx. 63 miles (over an hour) to access prenatal or maternal care</li>
                 </ul>
 
+                <div class="map-container fade-in">
+                    <h4 class="map-title">Healthcare Access Challenge in Hancock County</h4>
+                    <div class="map-wrapper">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d422519.8037847454!2d-83.36686068437499!3d33.28487769999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f6e8e6c5c6c3e3%3A0x7c8c8c8c8c8c8c8c!2sHancock%20County%2C%20GA!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus&zoom=9" 
+                            class="map-iframe"
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                        <p class="map-caption">Interactive map showing Hancock County, Georgia and surrounding areas. The nearest maternal healthcare facilities are located in neighboring counties, requiring expectant mothers to travel 60+ miles for prenatal care.</p>
+                    </div>
+                </div>
+
                 <div class="barriers-box fade-in">
                     <p class="barriers-text">
                         Barriers such as lack of transportation, inability to take time off work, childcare responsibilities, 
@@ -208,6 +222,44 @@
                         certified nurse-midwives, obstetricians, social workers, and community health workers who 
                         understand the unique needs of rural Georgia.
                     </p>
+                    
+                    <div class="team-grid">
+                        <div class="team-member fade-in">
+                            <div class="team-photo">
+                                <img src="assets/member1.png" alt="Dr. Sarah Mitchell">
+                            </div>
+                            <h4 class="team-name">Vaugh-Regan Bledsoe</h4>
+                            <p class="team-role">Program Director & Obstetrician</p>
+                            <p class="team-bio">Board-certified OB-GYN with 15+ years of experience in maternal health</p>
+                        </div>
+                        
+                        <div class="team-member fade-in">
+                            <div class="team-photo">
+                                <img src="assets/member2.png" alt="Jennifer Davis">
+                            </div>
+                            <h4 class="team-name">Ahmer Shahid</h4>
+                            <p class="team-role">Certified Nurse-Midwife</p>
+                            <p class="team-bio">Specialized in prenatal care and community-based maternal health</p>
+                        </div>
+                        
+                        <div class="team-member fade-in">
+                            <div class="team-photo">
+                                <img src="assets/member3.png" alt="Marcus Thompson">
+                            </div>
+                            <h4 class="team-name">Rachel Goodrum</h4>
+                            <p class="team-role">Community Health Director</p>
+                            <p class="team-bio">Dedicated to bridging healthcare gaps in rural communities</p>
+                        </div>
+                        
+                        <div class="team-member fade-in">
+                            <div class="team-photo">
+                                <img src="assets/member4.png" alt="Dr. Emily Rodriguez">
+                            </div>
+                            <h4 class="team-name">Komal Babar</h4>
+                            <p class="team-role">Public Health Specialist</p>
+                            <p class="team-bio">Expert in maternal mortality prevention and health equity</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -220,15 +272,17 @@
             
             <div class="content-block">
                 <div class="org-header fade-in">
-                    <h3>Georgia Rural Health Initiative</h3>
+                    <div class="org-logo-container">
+                        <img src="assets/parentorg.png" alt="Piedmont Healthcare" class="org-logo">
+                    </div>
+                    <h3>Partnership with Piedmont Healthcare</h3>
                     <p class="org-subtitle">Bridging Healthcare Gaps Across Rural Georgia</p>
                 </div>
 
                 <div class="org-content">
+                   
                     <p class="org-description">
-                        Mother's Aid is a flagship program of the Georgia Rural Health Initiative (GRHI), 
-                        a nonprofit organization established in 2018 to address healthcare disparities in 
-                        underserved rural communities across Georgia.
+                        Mother's Aid is a pilot program established in 2025 and planning to launch in January 2026 with the mission of providing comprehensive maternal healthcare to women in Hancock County, Georgia. Through our partnership with Piedmont Healthcare, we are committed to reducing maternal mortality rates and improving health outcomes for expectant and new mothers in underserved rural communities.
                     </p>
 
                     <div class="org-stats">
@@ -443,74 +497,116 @@
             <h2 class="section-title">Services Provided</h2>
             
             <div class="content-block">
-                <p class="services-intro fade-in">
-                    Mother's Aid offers comprehensive maternal healthcare services at no cost to eligible 
+                <p class="services-intro">
+                    Mother's Aid offers comprehensive maternal healthcare services at <span class="highlight">no cost</span> to eligible 
                     participants. Our services cover all stages of pregnancy, childbirth, and postpartum care.
                 </p>
 
-                <div class="services-grid">
-                    <div class="service-card fade-in">
-                        <div class="service-icon">🤰</div>
-                        <h3>Prenatal Care</h3>
+                <h3 class="service-category">Supporting You Every Step of the Way</h3>
+                
+                <div class="mobile-services-grid">
+                    <div class="mobile-service-card card-teal fade-in">
+                        <h4>Services for Newly Pregnant Mothers</h4>
+                        
+                        <h5>Early Pregnancy Care</h5>
                         <ul>
-                            <li>Regular prenatal checkups and monitoring</li>
-                            <li>Ultrasound examinations</li>
-                            <li>Blood tests and screenings</li>
-                            <li>Nutrition counseling</li>
-                            <li>Prenatal vitamins and supplements</li>
-                            <li>High-risk pregnancy management</li>
+                            <li>Dating ultrasound (if available)</li>
+                            <li>Medical history review</li>
+                            <li>Enrollment into prenatal care</li>
+                        </ul>
+                        
+                        <h5>Initial Health Screening</h5>
+                        <ul>
+                            <li>Blood pressure, weight, BMI</li>
+                            <li>Blood tests (CBC, blood type-Rh, HIV, ophtho, hepatitis)</li>
+                            <li>Urine tests (UT, glucose, protein etc.)</li>
+                        </ul>
+                        
+                        <h5>Education & Counseling</h5>
+                        <ul>
+                            <li>Nutrition guidance</li>
+                            <li>Prenatal vitamins and folic acid</li>
+                            <li>Lifestyle counseling</li>
+                            <li>Warning signs to watch for</li>
                         </ul>
                     </div>
 
-                    <div class="service-card fade-in">
-                        <div class="service-icon">👶</div>
-                        <h3>Birth Planning & Support</h3>
+                    <div class="mobile-service-card card-coral fade-in">
+                        <h4>First Trimester Care</h4>
+                        <p class="card-subtitle">(0-15 weeks)</p>
                         <ul>
-                            <li>Birth plan development</li>
-                            <li>Childbirth education classes</li>
-                            <li>Labor and delivery preparation</li>
-                            <li>Hospital coordination</li>
-                            <li>Doula services referral</li>
-                            <li>Breastfeeding education</li>
+                            <li>Routine check-ups</li>
+                            <li>Fetal heart tone monitoring</li>
+                            <li>Screening for anemia & infections</li>
+                            <li>Early gestational diabetes screening (if needed)</li>
+                            <li>Mental health screening</li>
+                            <li>Flu vaccine (as appropriate)</li>
+                            <li>Genetic screening information</li>
+                            <li>Domestic violence screening & support</li>
                         </ul>
                     </div>
 
-                    <div class="service-card fade-in">
-                        <div class="service-icon">💕</div>
-                        <h3>Postpartum Care</h3>
+                    <div class="mobile-service-card card-coral fade-in">
+                        <h4>Second Trimester Care</h4>
+                        <p class="card-subtitle">(14-27 weeks)</p>
                         <ul>
-                            <li>Postpartum checkups (up to 1 year)</li>
-                            <li>Breastfeeding support and lactation consultation</li>
-                            <li>Mental health screening and support</li>
-                            <li>Newborn care guidance</li>
-                            <li>Family planning counseling</li>
-                            <li>Recovery monitoring and support</li>
+                            <li>Prenatal visits every 4 weeks</li>
+                            <li>Fetal growth measurement</li>
+                            <li>Blood pressure & weight monitoring</li>
+                            <li>Anatomy ulnasound coordination</li>
+                            <li>Gestational diabetes testing at 24-29 weeks</li>
+                            <li>Iron supplements guidance</li>
+                            <li>Education on breastfeeding & birth planning</li>
                         </ul>
                     </div>
 
-                    <div class="service-card fade-in">
-                        <div class="service-icon">🏠</div>
-                        <h3>Support Services</h3>
+                    <div class="mobile-service-card card-coral fade-in">
+                        <h4>Third Trimester Care</h4>
+                        <p class="card-subtitle">(28 weeks-Delivery)</p>
                         <ul>
-                            <li>Home visits for high-risk patients</li>
-                            <li>Transportation assistance</li>
-                            <li>Childcare coordination during appointments</li>
-                            <li>Social services referrals</li>
-                            <li>Insurance enrollment assistance</li>
-                            <li>24/7 nurse hotline access</li>
+                            <li>More frequent prenatal visits</li>
+                            <li>Monitoring fetal movement & position</li>
+                            <li>Signs of labor and cesarean education</li>
+                            <li>Group B Strep testing at 35-37 weeks</li>
+                            <li>Preeclampsia monitoring</li>
+                            <li>Safe newborn care teaching</li>
+                            <li>Delivery, preparation & emergency plan</li>
+                        </ul>
+                    </div>
+
+                    <div class="mobile-service-card card-coral fade-in">
+                        <h4>Postpartum Care</h4>
+                        <p class="card-subtitle">(0-12 weeks)</p>
+                        <ul>
+                            <li>Infant physical exam</li>
+                            <li>Weight checks</li>
+                            <li>Feeding support</li>
+                            <li>Immunizations (if offered)</li>
+                            <li>Safe sleep & newborn care education</li>
+                        </ul>
+                    </div>
+
+                    <div class="mobile-service-card card-purple fade-in">
+                        <h4>Social & Support Services</h4>
+                        <ul>
+                            <li>Referrals to OB/GYNists</li>
+                            <li>Assistance with insurance /WIC</li>
+                            <li>Mental health & substance use referrals</li>
+                            <li>Domestic violence resources</li>
+                            <li>Transportation coordination for clinic visits</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="eligibility-section">
+                <div class="eligibility-box">
                     <h3>Eligibility</h3>
                     <p>Our services are available to:</p>
-                    <ul class="eligibility-list">
-                        <li>✓ Pregnant women residing in Hancock County</li>
-                        <li>✓ New mothers up to 1 year postpartum</li>
-                        <li>✓ All income levels welcome</li>
-                        <li>✓ Insured and uninsured patients</li>
-                        <li>✓ Women of all ages and backgrounds</li>
+                    <ul>
+                        <li>Pregnant women residing in Hancock County</li>
+                        <li>New mothers up to <span class="highlight">1 year</span> postpartum</li>
+                        <li>All income levels welcome</li>
+                        <li>Insured and uninsured patients</li>
+                        <li>Women of all ages and backgrounds</li>
                     </ul>
                 </div>
             </div>

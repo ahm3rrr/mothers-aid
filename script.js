@@ -1,3 +1,19 @@
+// Ensure page loads from the top
+window.addEventListener('beforeunload', () => {
+    window.scrollTo(0, 0);
+});
+
+// Scroll to top on page load
+if (history.scrollRestoration) {
+    history.scrollRestoration = 'manual';
+}
+
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        window.scrollTo(0, 0);
+    }, 0);
+});
+
 // Mobile menu toggle
 const menuToggle = document.querySelector('.menu-toggle');
 const navMenu = document.querySelector('.nav-menu');
@@ -288,10 +304,14 @@ function createParticles() {
 
 // Animate stat numbers
 function animateStats() {
-    const statNumbers = document.querySelectorAll('.stat-number');
+    const statNumbers = document.querySelectorAll('.stat-number[data-target]');
     
     statNumbers.forEach(stat => {
         const target = parseInt(stat.getAttribute('data-target'));
+        
+        // Only animate if target is a valid number
+        if (isNaN(target)) return;
+        
         const duration = 2000;
         const increment = target / (duration / 16);
         let current = 0;
