@@ -1907,6 +1907,69 @@ body {
     text-align: right;
 }
 
+/* Staff Section */
+.staff-section {
+    background: linear-gradient(180deg, var(--bg-light-purple) 0%, var(--bg-light) 100%);
+}
+
+.staff-intro {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-dark);
+}
+
+.staff-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.staff-card {
+    background: white;
+    padding: 2.5rem 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+    border-top: 4px solid var(--primary-color);
+}
+
+.staff-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(236, 64, 122, 0.2);
+}
+
+.staff-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.staff-card h3 {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.staff-card h4 {
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.staff-card p {
+    color: var(--text-dark);
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
 /* Sign Up Section */
 .signup-intro {
     text-align: center;
@@ -2033,6 +2096,7 @@ body {
 }
 
 .contact-info {
+    margin-top: 2rem;
     background: var(--bg-light);
     padding: 2rem;
     border-radius: 10px;
@@ -2296,6 +2360,70 @@ body {
     margin-top: 3rem;
 }
 
+.budget-breakdown {
+    margin-top: 3rem;
+}
+
+.budget-breakdown h3 {
+    text-align: center;
+    color: var(--text-dark);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.breakdown-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.breakdown-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid var(--primary-color);
+    transition: var(--transition);
+}
+
+.breakdown-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(236, 64, 122, 0.2);
+}
+
+.breakdown-card h4 {
+    color: var(--text-dark);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.breakdown-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.breakdown-card ul li {
+    padding: 0.6rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+.breakdown-card ul li::before {
+    content: '▪';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
 .funding-sources h3 {
     text-align: center;
     color: var(--text-dark);
@@ -2305,7 +2433,7 @@ body {
 
 .funding-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
 }
 
@@ -2313,7 +2441,7 @@ body {
     background: linear-gradient(145deg, #ffffff 0%, var(--bg-light) 100%);
     padding: 2.5rem 2rem;
     border-radius: 15px;
-    text-align: center;
+    text-align: left;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     border-top: 5px solid var(--primary-color);
     transition: var(--transition);
@@ -2328,6 +2456,7 @@ body {
     color: var(--primary-color);
     font-size: 1.4rem;
     margin-bottom: 1rem;
+    font-weight: 600;
 }
 
 .funding-amount {
@@ -2339,7 +2468,15 @@ body {
 
 .funding-card p {
     color: var(--text-dark);
-    font-size: 0.95rem;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* Responsive for budget breakdown */
+@media (max-width: 992px) {
+    .breakdown-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* References Section */
